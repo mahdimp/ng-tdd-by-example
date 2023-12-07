@@ -26,7 +26,6 @@ describe('InputComponent', () => {
     const message = 'Hello';
     component.message = message;
     fixture.detectChanges();
-    console.log(fixture.debugElement.nativeElement);
     expect(element.innerHTML).toBe(message)
   })
 });
