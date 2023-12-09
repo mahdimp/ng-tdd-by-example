@@ -22,7 +22,7 @@ describe('DynamicClassesComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  fit('should have alert class if isAlert is true', () => {
+  it('should have alert class if isAlert is true', () => {
     component.isActive = true;
     fixture.detectChanges();
     const element = fixture.debugElement.query(By.css('.container'));
@@ -30,7 +30,7 @@ describe('DynamicClassesComponent', () => {
     expect(classes.active).toBeTruthy();
   });
 
-  fit('should have alert class if isAlert is false', () => {
+  it('should have alert class if isAlert is false', () => {
     component.isActive = false;
     fixture.detectChanges();
     const element = fixture.debugElement.query(By.css('.container'));
