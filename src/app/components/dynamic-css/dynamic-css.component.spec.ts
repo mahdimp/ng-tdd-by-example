@@ -22,7 +22,7 @@ describe('DynamicCssComponent', () => {
     fixture.detectChanges();
   });
 
-  fit('should have orange background', () => {
+  it('should have orange background', () => {
     const element = fixture.debugElement.children[0];
     component.color = 'orange';
     fixture.detectChanges();
