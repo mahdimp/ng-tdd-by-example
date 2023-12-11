@@ -25,7 +25,6 @@ describe('DomElementTestingComponent', () => {
   it('the container should be visible when isVisible is true', ()=>{
     component.isVisible = true;
     fixture.detectChanges();
-
     fixture.whenStable().then(()=>{
       expect(fixture.debugElement.query(By.css('.container'))).not.toBeNull()
     });
