@@ -34,7 +34,7 @@ describe('RemoteWithSpyService', () => {
 
   // Note using call callFake
 
-  fit('should not invoke error', ()=>{
+  it('should not invoke error', ()=>{
     const fn = () => {};
     const spy = spyOn(service, 'throwingError').and.callFake(fn);
 
