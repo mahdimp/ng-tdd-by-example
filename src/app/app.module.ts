@@ -6,7 +6,7 @@ import { InputComponent } from './components/input/input.component';
 import { OutputComponent } from './components/output/output.component';
 import { DomElementTestingComponent } from './components/dom-element-testing/dom-element-testing.component';
 import { ContentProjectionComponent } from './components/content-projection/content-projection.component';
-import { FilterPipe } from './pipes/find.pipe';
+import { FindPipe } from './pipes/find.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { FilterPipe } from './pipes/find.pipe';
     OutputComponent,
     DomElementTestingComponent,
     ContentProjectionComponent,
-    FilterPipe
+    FindPipe,
   ],
   imports: [
     BrowserModule
