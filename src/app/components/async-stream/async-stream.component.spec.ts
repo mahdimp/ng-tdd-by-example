@@ -37,7 +37,7 @@ describe('AsyncStreamComponent', () => {
       stream.next('Hello World!');
       fixture.detectChanges();
       element = fixture.debugElement.query(By.css('.container')).nativeElement as HTMLElement;
-      expect(element.innerHTML).toBe('Hello Mahdi');
+      expect(element.innerHTML).toBe('Hello World!');
   });
 
 
