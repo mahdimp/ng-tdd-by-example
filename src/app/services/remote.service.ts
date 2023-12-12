@@ -19,4 +19,8 @@ export class RemoteService {
   getPersonInfo(): Observable<Person>{
     return this.http.get<Person>('/assets/data/person-info.json');
   }
+
+  throwingError() {
+    throw new Error('Should be mocked');
+  }
 }
